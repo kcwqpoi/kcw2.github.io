@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chanwook's Homepage</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="primary_header">
+        <h1 class="title">
+          <font size=100> <b>Chanwook's Homepage</b></font>
+        </h1>
+      </div>
+      <nav class="secondary_header" id="menu">
+        <ul>
+          <li><a href="index.html">집으로</a></li>
+          <li><a href="introduce.html"><b>캠퍼소개</a></li>
+          <li><a href="portfolio.html">포트폴리오</a></li>
+          <li><a href="teamp.html">팀프로젝트</a></li>
+          <li><a href="add.html">사진첩</a></li>
+          <li><a href="mv.html">동영상</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2 class="noDisplay">Main Content</h2>
+      <table width="100%" height=border="0">
+        <tbody>
+          <tr>
+            <td align="center" size=40%><img src="images/mainpic.jpg" width="80%" height="auto" alt="" />
+              <script>
+                var myImage = document.getElementById("mainImage");
+                var imageArray = ["mainpic.jpg", "dynamix.jpg"];
+                var imageIndex = 0;
+
+                function changeImage() {
+                  myImage.setAttribute("src", imageArray[imageIndex]);
+                  imageIndex++;
+                  if (imageIndex >= imageArray.length) {
+                    imageIndex = 0;
+                  }
+                }
+                setInterval(changeImage, 3000);
+              </script>
+            </td>
+            <td size=60%>
+              <article class="left_article">
+                <h3>인사말</h3>
+                <P>안녕하세요. 저의 캠핑장에 방문하신것을 환영합니다!<BR>
+                  특이하게 만들어 보고 싶어서 캠핑으로 컨셉을 잡고 만들어 봤습니다!<BR>
+                  아직 부족한 부분이 많지만 앞으로 배워나가면서 업데이트 할 예정이니 재밌게 봐주세요!
+                </p>
+                <h3>프로필</h3>
+                <p>
+                  이름 : 김찬욱<BR>
+                  나이 : 23 <BR>
+                  학번 : 91812218 <BR>
+                  학과 : 정보보호학과 <BR>
+                  사는곳 : 서울 은평구 가좌로 12길 <BR>
+                  전화번호 : 010-3699-2282 <BR>
+                  메일주소 : kcwqpoi0812@naver.com
+                </p>
+                <h3>tmi</h3>
+                <P>현재 1학년 1학기만 마친상태로 군대를 다녀와
+                  21년도 1학기에 복학함 1학년 2학기를 하지 않고 <BR>
+                  2학년을 바로 시작하여 휴학이 없다면 코스모스졸업을 할 예정
+                </p>
+              </article>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <footer class="secondary_header footer">
+    <div class="copyright"><strong>© 중부대학교 정보보호학과 김찬욱 91812218</strong></div>
+  </footer>
+  </div>
+</body>
+
+</html>
